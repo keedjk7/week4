@@ -46,6 +46,7 @@ int main() {
 				else {
 					STILL = money / 500;
 					if (STILL > five_hundred) {
+						cout << "1"<<five_hundred;
 						K_FH += five_hundred;
 						money -= (five_hundred * 500);
 					}
@@ -88,7 +89,7 @@ int main() {
 					K_FH += five_hundred;
 					money -= (five_hundred * 500);
 				}
-				else {
+				else if(five_hundred-K_FH>0){
 					K_FH += STILL;
 					money -= (STILL * 500);
 				}
